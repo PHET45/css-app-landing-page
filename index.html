@@ -159,5 +159,43 @@
       </div>
       <script src="main.js"></script>
     </div>
+<!-- Start Dev1 -->
+ <section class="navber_section">
+    <div class="navber__header">
+      <div class="navber__logo">
+        <img src="./logo/logo.png" alt="logo" />
+      </div>
+      <div class="navber__menu">
+        <ul>
+          <li class="navber__menu-item navber__menu-item--active"><a href="#home">Home</a></li>
+          <li class="navber__menu-item"><a href="#features">Features</a></li>
+          <li class="navber__menu-item"><a href="#pricing">Pricing</a></li>
+          <li class="navber__menu-item"><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="hero__section">
+    <div class="hero__content">
+      <span class="hero__subtitle">🌈️ Acme Productivity App</span>
+      <h1 class="hero__title">Boost Your <span class="hero__title-highlight">Product</span>ivity</h1>
+      <h3 class="hero__description">Streamline your workflow with our all-in-one productivity app.</h3>
+      <button class="hero__button" onclick="window.location.href='#'">Start Free Trial</button>
+    </div>
+    </section>
+
+     <!-- ลูกเล่น hover ของ navber -->
+     <script>
+      const menuItems = document.querySelectorAll('.navber__menu-item');
+    
+      menuItems.forEach(item => {
+        item.addEventListener('click', function (e) {
+          e.preventDefault();
+          menuItems.forEach(i => i.classList.remove('navber__menu-item--active'));
+          this.classList.add('navber__menu-item--active');
+        });
+      });
+    </script>       
+<!-- End Dev1 -->
   </body>
 </html>
