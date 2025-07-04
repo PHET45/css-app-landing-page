@@ -478,9 +478,10 @@ html{scroll-behavior: smooth;}
 
 .hero__button{
     width: 187px;
-    height: 56px;
+    height: 60px;
+    border: 4px solid transparent;
     border-radius: 16px;
-    padding: 16px 36px;
+    padding: 16px 30px;
     background-color: #1A1A2C;
     color: #fff;
     font-weight: 600;
@@ -488,7 +489,6 @@ html{scroll-behavior: smooth;}
     line-height: 24px;
     letter-spacing: 0%;
     text-align: center;
-    border: none;
     cursor: pointer;
 }
 
