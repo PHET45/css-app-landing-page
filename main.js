@@ -37,7 +37,7 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
         setTimeout(() => {
             document.getElementById('successMessage').style.display = 'block';
             document.getElementById('contactForm').reset();
-            submitBtn.textContent = 'Send Message';
+            submitBtn.textContent = 'Submit';
             submitBtn.disabled = false;
             
             // Hide success message after 5 seconds
