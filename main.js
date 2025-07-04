@@ -73,3 +73,14 @@ document.querySelectorAll('input, textarea').forEach(input => {
         this.closest('.form-group').querySelector('label').style.color = '#4a5568';
     });
 });
+
+// ลูกเล่น hover ของ navber
+    const menuItems = document.querySelectorAll('.navber__menu-item');
+  
+    menuItems.forEach(item => {
+      item.addEventListener('click', function (e) {
+        e.preventDefault();
+        menuItems.forEach(i => i.classList.remove('navber__menu-item--active'));
+        this.classList.add('navber__menu-item--active');
+      });
+    }); 
